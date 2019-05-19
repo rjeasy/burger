@@ -1,0 +1,8 @@
+prblm:
+prgm is referencing a table for burger instead of burgers
+
+the table burger_name was name in cat and may need burger_name
+
+All intances of sleepy to devoured
+
+C:\Users\rjeas\AppData\Roaming\npm?—?sequelize-cli@3.0.0
