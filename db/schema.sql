@@ -1,4 +1,5 @@
-CREATE DATABASE burger_db;
+drop DATABASE burgers_db;
+CREATE DATABASE IF NOT EXISTS burger_db;
 USE burger_db;
 
 -- Create the table actors.
