@@ -8,21 +8,18 @@ $(function() {
       devoured: newdevoured
     };
 
-    // Send the PUT request.
     $.ajax("/api/burger/" + id, {
       type: "PUT",
       data: newdevouredState
     }).then(
       function() {
         console.log("changed devoured to", newdevoured);
-        // Reload the page to get the updated list
         location.reload();
       }
     );
   });
 
   $(".create-form").on("submit", function(event) {
-    // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
     var newBurger = {
@@ -30,7 +27,6 @@ $(function() {
       devoured: $("[name=devoured]:checked").val().trim()
     };
 
-    // Send the POST request.
     $.ajax("/api/burger", {
       type: "POST",
       data: newBurger

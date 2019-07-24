@@ -5,17 +5,17 @@ var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "Pa$$w0rd1234",
+  password: "password",
   database: "burgers_db"
 });
 
-if (process.env.require) {
+if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'hacktheplanet',
+    password: 'password',
     database: 'todoagain_db'
   });
 };

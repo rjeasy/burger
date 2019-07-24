@@ -2,7 +2,6 @@ drop DATABASE burgers_db;
 CREATE DATABASE IF NOT EXISTS burger_db;
 USE burger_db;
 
--- Create the table actors.
 CREATE TABLE burgers (
   id int AUTO_INCREMENT,
   burger_name VARCHAR (50) NOT NULL,

@@ -1,4 +1,3 @@
--- USE burger_db;
 INSERT INTO burgers (burger_name) VALUES ('fatback-burger');
 INSERT INTO burgers (burger_name) VALUES ('big-mouth-burger');
 INSERT INTO burgers (burger_name) VALUES ('phat-ass-burger');
